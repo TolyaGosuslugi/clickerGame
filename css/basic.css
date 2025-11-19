@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Tektur:wght@400..900&display=swap');
+
+*{
+    font-family: "Tektur", sans-serif;
+}
+
+:root {
+    --fontEn: "Orbitron", sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #bce5ff, #afdffe, #a2dafc, #95d4fb, #87cefa);   
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.header__title{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--fontEn);
+    color: white;
+    text-align: center;
+}
+
+/* .header__info {} */
+
+/* .header__console {} */
+
+.header__button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 3px darkblue solid;
+    background-color: #87ceeb;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.1s;
+}
+
+.header__button:active{
+    background-color: hsl(197, 71%, 60%);
+}
+
+.header__button p {
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center; 
+    width: 100%;
+    top: -14%;
+}
+
+@media (max-width: 770px) {
+    .header__title {
+        font-size: clamp(1rem, 0.0104rem + 4.5238vw, 2.1875rem);;
+    }
+}
+
+.modal-headerInfo {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000088;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-headerInfo__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: gray 1px solid;
+}
+
+.modal-headerInfo__title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.modal-headerInfo__text {
+    font-size: 20px;
+}
+
+/* .modal-headerInfo__version {} */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker game</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/modules/center.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <button class="header__info header__button" id="headerInfo"><p>i</p></button>
+                    <div class="header__title">Clicker game</div>
+                    <button class="header__console header__button" id="headerConsole"><p>/</p></button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="main__content">
+                    <div class="main__info">
+                        <div class="main__clicks"><span id="mainClicks">0</span> <br class="main__br">кликов</div>
+                        <div class="main__speed"><span id="mainSpeed">0</span> <br class="main__br">кликов в секунду</div>
+                    </div>
+                    <div class="main__block">
+                        <button class="main__click-block" id="mainBlock"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-headerInfo" id="modalHeaderInfo">
+        <div class="modal-headerInfo__block">
+            <div class="modal-headerInfo__title">Внимание!</div>
+            <div class="modal-headerInfo__text">Ни в коем случае не перезегружайте страницу, иначе ваш прогресс будет потерян! <br>В дальнешем будет частичный фикс</div>
+            <div class="modal-headerInfo__version">Version: 0.0.1</div>
+        </div>
+    </div>
+</body>
+</html>
